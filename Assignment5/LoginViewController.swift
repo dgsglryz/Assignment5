@@ -41,25 +41,25 @@ class LoginViewController: UIViewController {
   }()
   
   private let loginButton: UIButton = {
-      let button = UIButton(type: .system)
-      button.setTitle("Login", for: .normal)
-      button.titleLabel?.font = UIFont.boldSystemFont(ofSize: 17)
-      button.backgroundColor = UIColor.systemBlue
-      button.setTitleColor(.white, for: .normal)
-      button.layer.cornerRadius = 25
-      button.addTarget(self, action: #selector(loginButtonTapped), for: .touchUpInside)
-      return button
+    let button = UIButton(type: .system)
+    button.setTitle("Login", for: .normal)
+    button.titleLabel?.font = UIFont.boldSystemFont(ofSize: 17)
+    button.backgroundColor = UIColor.systemBlue
+    button.setTitleColor(.white, for: .normal)
+    button.layer.cornerRadius = 25
+    button.addTarget(self, action: #selector(loginButtonTapped), for: .touchUpInside)
+    return button
   }()
   
   private let loginWithFacebookButton: UIButton = {
-      let button = UIButton(type: .system)
-      button.setTitle("Login with Facebook", for: .normal)
-      button.titleLabel?.font = UIFont.boldSystemFont(ofSize: 17)
-      button.setTitleColor(.systemBlue, for: .normal)
-      button.layer.borderWidth = 1
-      button.layer.borderColor = UIColor.systemBlue.cgColor
-      button.layer.cornerRadius = 25
-      return button
+    let button = UIButton(type: .system)
+    button.setTitle("Login with Facebook", for: .normal)
+    button.titleLabel?.font = UIFont.boldSystemFont(ofSize: 17)
+    button.setTitleColor(.systemBlue, for: .normal)
+    button.layer.borderWidth = 1
+    button.layer.borderColor = UIColor.systemBlue.cgColor
+    button.layer.cornerRadius = 25
+    return button
   }()
   
   private let createAccountButton: UIButton = {
